@@ -62,7 +62,7 @@ vsftpd是一款在Linux发行版中最受推崇的FTP服务器程序。特点是
 
 1、允许匿名ftp上传文件：
 
-修改*/etc/vsftpd/vsftpd.conf*
+修改/etc/vsftpd/vsftpd.conf
 
 *write_enable=YES*
 
@@ -72,9 +72,9 @@ vsftpd是一款在Linux发行版中最受推崇的FTP服务器程序。特点是
 
 2、允许匿名修改ftp文件
 
-更改*/var/ftp/pub* 目录的权限，为ftp用户添加写权限，并重新加载配置文件
+更改/var/ftp/pub目录的权限，为ftp用户添加写权限，并重新加载配置文件
 
-1）更改*/var/ftp/pub* 目录的权限
+1）更改/var/ftp/pub目录的权限
 
 *chmod o+w /var/ftp/pub/*
 
