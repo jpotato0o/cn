@@ -4,11 +4,11 @@
 Linux系统云主机密钥配置
 准备阶段需要用户登录云主机编辑云主机的配置文件，流程为“创建密钥”——“将公钥传入认证文件”——“配置密钥登录文件”——“重启密钥服务”。具体命令如下：
 
-***yum install lrzsz/***安装上传下载工具
+***yum install lrzsz/*** 安装上传下载工具
 
-***ssh-keygen -t dsa -f ~/.ssh/JD/***JD为密钥名称可以自定义
+***ssh-keygen -t dsa -f ~/.ssh/JD/*** JD为密钥名称可以自定义
 
-***Enter passphrase (empty for no passphrase):/***输入口令，也可以直接回车不设置口令
+***Enter passphrase (empty for no passphrase):/*** 输入口令，也可以直接回车不设置口令
 
 ***Enter same passphrase again:***
 
@@ -16,31 +16,31 @@ Linux系统云主机密钥配置
 
 ***ls –l***
 
-***cat JD.pub >>authorized_keys/***将公钥内容输出到相应文件中
+***cat JD.pub >>authorized_keys/*** 将公钥内容输出到相应文件中
 
-***chmod 400 authorized_keys/***将文件属性设置为只读
+***chmod 400 authorized_keys/*** 将文件属性设置为只读
 
-***sz JD/***下载私钥到默认下载目录
+***sz JD/*** 下载私钥到默认下载目录
 
-***sz JD.pub/***下载公钥到默认下载目录
+***sz JD.pub/*** 下载公钥到默认下载目录
 
-***rm –f ~/.ssh/JD.pub/***删除原来的公钥文件
+***rm –f ~/.ssh/JD.pub/*** 删除原来的公钥文件
 
-***rm –f ~/.ssh/JD/***删除原来的私钥文件
+***rm –f ~/.ssh/JD/*** 删除原来的私钥文件
 
 ***cd /etc/ssh***
 
-***cp sshd_config sshd_configback/***备份ssh配置文件
+***cp sshd_config sshd_configback/*** 备份ssh配置文件
 
-***vi sshd_config/***编辑ssh配置文件
+***vi sshd_config/*** 编辑ssh配置文件
 
-***PubkeyAuthentication yes/***开启密钥认证
+***PubkeyAuthentication yes/*** 开启密钥认证
 
 ***AuthorizedKeysfile .ssh/authorized_keys/*** PublicKey文件路径
 
-***PasswordAuthentication no/***关闭密码认证（可选）
+***PasswordAuthentication no/*** 关闭密码认证（可选）
 
-***#service sshd restart/***重启sshd服务
+***#service sshd restart/*** 重启sshd服务
 
 **用户登录**
 
