@@ -19,7 +19,7 @@
 
 **问题原因：**
 
-PAM 模块 *pam_listfile.so* 相关访问控制策略导致用户登录失败。
+PAM 模块 pam_listfile.so相关访问控制策略导致用户登录失败。
 
 
 
