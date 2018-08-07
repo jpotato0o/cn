@@ -34,7 +34,8 @@
 
 
 *cat /etc/passwd | grep test
-test:x:1000:1000::/home/test:/sbin/nologin*
+
+test: x :1000:1000::/home/test:/sbin/nologin*
 
 查看相应用户的 Shell 是否被修改成了 nologin。
 
