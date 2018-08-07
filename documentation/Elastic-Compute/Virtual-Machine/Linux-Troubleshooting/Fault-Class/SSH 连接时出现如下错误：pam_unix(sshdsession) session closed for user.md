@@ -33,7 +33,8 @@
 2.通过如下指令查看相应用户的默认 Shell：
 
 
-*cat /etc/passwd | grep testtest: x :1000:1000::/home/test:/sbin/nologin*
+*cat /etc/passwd | grep test
+test:x:1000:1000::/home/test:/sbin/nologin*
 
 查看相应用户的 Shell 是否被修改成了 nologin。
 
