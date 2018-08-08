@@ -6,19 +6,19 @@
 1. 登录京东云官网[https://www.jdcloud.com/](https://www.jdcloud.com/)。
 2. 选择“产品>网络 负载均衡”，具体见下图。
 
-![ALB](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-011.png)
+![ALB](../../../../image/Networking/ALB/ALB-011.png)
 
 3.弹出负载均衡的产品介绍页，点击**立即购买**。
 
-![ALB-buy](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-012.png)
+![ALB-buy](../../../../image/Networking/ALB/ALB-012.png)
 
-4.购买的具体操作，请参考[创建实例](https://github.com/jdcloudcom/cn/blob/master/documentation/Networking/ALB/Getting-Started/Create-ALB-Instance.md)。
+4.购买的具体操作，请参考[创建实例](../../../../documentation/Networking/ALB/Getting-Started/Create-ALB-Instance.md)。
 
 ## 入口2：[ALB 控制台](https://console.jdcloud.com/host/loadBalance/list)
 
 1. 登录京东云官网[https://www.jdcloud.com/](https://www.jdcloud.com/)。
 2. 选择“控制台”，具体见下图。
 
-![控制台](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/console-buy.png)
+![控制台](../../../../image/Networking/ALB/console-buy.png)
 
-3.登录控制台，具体操作请参考[创建实例](https://github.com/jdcloudcom/cn/blob/master/documentation/Networking/ALB/Getting-Started/Create-ALB-Instance.md)。
+3.登录控制台，具体操作请参考[创建实例](../../../../documentation/Networking/ALB/Getting-Started/Create-ALB-Instance.md)。

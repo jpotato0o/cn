@@ -5,9 +5,9 @@
 
 具体顺序请参考下图所示：
 
- ![ALB创建流程](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-013.png)
+ ![ALB创建流程](../../../../image/Networking/ALB/ALB-013.png)
 
- ![ALB删除流程](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-014.png)
+ ![ALB删除流程](../../../../image/Networking/ALB/ALB-014.png)
 
 ## 负载均衡实例配置
 

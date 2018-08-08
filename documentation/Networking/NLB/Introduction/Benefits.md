@@ -55,6 +55,6 @@ NLB可完整透传用户源IP地址，便于服务端感知或者统计真实源
 - [创建实例](../Getting-Started/Create-Instance.md)
 - [创建虚拟服务器组](../Operation-Guide/TargetGroup-Management.md)
 - [配置侦听策略](../Operation-Guide/Listener-Management.md)
-- [后端服务管理与服务实例健康状态查看](../Operation-Guide/Backend-Management.md)
+- [管理后端服务与查看服务实例健康状态](../Operation-Guide/Backend-Management.md)
 - [查看监控信息](../Operation-Guide/Monitoring.md)
 

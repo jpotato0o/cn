@@ -4,7 +4,7 @@
 
 京东云私有网络部署：
 
-![VPC基础架构](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-001.png)
+![VPC基础架构](../../../../image/Networking/ALB/ALB-001.png)
 
 ## 负载均衡升级说明
 
@@ -31,7 +31,7 @@
 
 	负载均衡可绑定高可用组，根据业务流量和设备负载情况动态调整服务器数量，实现资源的合理分配，保证业务正常运行。
 
-![高可用服务](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-008.png)
+![高可用服务](../../../../image/Networking/ALB/ALB-008.png)
 
 ## 负载均衡主要功能
 

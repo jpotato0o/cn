@@ -4,7 +4,7 @@
   - name: 产品简介
     items:
       - name: 产品概述
-        href: Introduction/What-Is-MongoDB.md
+        href: Introduction/What-Is-NLB.md
       - name: 核心概念
         href: Introduction/Core-Concepts.md
       - name: 基础架构
@@ -33,79 +33,58 @@
         href: Pricing/Renew-Process.md
   - name: 入门指南
     items:
-      - name: 创建实例
+      - name: 创建网络负载均衡实例
         href: Getting-Started/Create-Instance.md
-      - name: 设置白名单
-        href: Getting-Started/Set-Whitelist.md
-      - name: 连接实例
-        href: Getting-Started/Connect-Instance.md
-      - name: 导入数据
-        href: Getting-Started/Import-Data.md
-      - name: 导出数据
-        href: Getting-Started/Export-Data.md
+      - name: 创建侦听策略
+        href: Getting-Started/Create-ListenerPolicy.md
+      - name: 创建后端服务
+        href: Getting-Started/Create-Backend.md
+      - name: 创建虚拟服务器组
+        href: Getting-Started/Create-TargetGroup.md
+      - name: 注册服务实例
+        href: Getting-Started/Register-Targets.md
+      - name: 查看实例健康状态
+        href: Getting-Started/Describe-TargetHealth.md
+      - name: 创建高可用组
+        href: Getting-Started/Create-AvailabilityGroup.md
   - name: 操作指南
     items:
-      - name: 实例管理
-        items:
-          - name: 变更配置
-            href: Operation-Guide/Instance-Management/Modify-Instance-Spec.md
-          - name: 重启实例
-            href: Operation-Guide/Instance-Management/Restart-Instance.md
-          - name: 续费实例
-            href: Operation-Guide/Instance-Management/Renewal-Instructions.md      
-          - name: 删除实例
-            href: Operation-Guide/Instance-Management/Delete-Instance.md
-      - name: 账号管理
-        items:
-          - name: 创建账号
-            href: Operation-Guide/Account-Management/Create-MongoDB-Account.md
-          - name: 修改密码
-            href: Operation-Guide/Account-Management/Reset-Password.md
-      - name: 备份管理
-        items:
-          - name: 设置自动备份
-            href: Operation-Guide/Backup/Modify-Backup-Policy.md        
-          - name: 手动创建备份
-            href: Operation-Guide/Backup/Create-Backup.md       
-          - name: 下载备份文件
-            href: Operation-Guide/Backup/Download-Bckup.md    
-          - name: 恢复数据
-            href: Operation-Guide/Backup/Restore-Instance.md       
-          - name: 根据备份创建实例
-            href: Operation-Guide/Backup/Create-Instance2.md      
-          - name: 根据时间点创建实例          
-            href: Operation-Guide/Backup/Create-Instance3.md      
-      - name: 跨地域备份同步服务
-        items:
-          - name: 创建跨地域备份同步服务
-            href: Operation-Guide/Across-Region-Backup-Sync/Create-Backup-Sync.md  
-          - name: 根据备份数据创建实例
-            href: Operation-Guide/Across-Region-Backup-Sync/Create-Instance4.md
-      - name: 监控报警
-        items:
-          - name: 查看监控信息
-            href: Operation-Guide/Monitoring/Monitoring.md
-          - name: 设置报警规则
-            href: Operation-Guide/Monitoring/Alarm-Rules.md              
+      - name: 配置导览
+        href: Operation-Guide/Start-From-Here.md
+      - name: 创建网络负载均衡实例
+        href: Operation-Guide/Create-NLB-Instance.md
+      - name: 网络负载均衡管理
+        href: Operation-Guide/NLB-Instance-Management.md
+      - name: 侦听器管理
+        href: Operation-Guide/Listener-Management.md
+      - name: 后端服务管理
+        href: Operation-Guide/Backend-Management.md
+      - name: 虚拟服务器组管理
+        href: Operation-Guide/TargetGroup-Management.md
+      - name: 监控服务
+        href: Operation-Guide/Monitoring.md
+      - name: 使用限制
+        href: Operation-Guide/Restrictions.md                
   - name: 最佳实践
     items:
-    - name: 使用MongoDB的固定集合
-      href: Best-Practices/Capped-Collections.md
-    - name: MongoDB 开启慢日志分析
-      href: Best-Practices/MongoDB-Profile.md
-    - name: 公网连接MongoDB实例
-      href: Best-Practices/Public-Network-Connect-to-MongoDB-Instance.md
-  - name: 教程
-    items:
-    status: 0
+    - name: 利用网络负载均衡部署源IP透传TCP服务
+      href: Best-Practices/Deploy-TCP-Service-with-NLB.md
+    - name: 利用网络负载均衡部署多端口业务、服务器复用服务
+      href: Best-Practices/Deploy-Multiple-Listener-single-backend-NLB.md
+    - name: 利用网络负载均衡部署高可用业务
+      href: Best-Practices/Deploy-High-Availability -Service-with-NLB.md
+    - name: 利用网络负载均衡部署会话保持业务
+      href: Best-Practices/Session-Sticky-with-NLB.md
+    - name: 利用网络负载均衡保证服务实例优雅退出
+      href: Best-Practices/Connection-Draining-with-NLB.md
+    - name: 利用网络负载均衡部署基于虚机与容器的服务
+      href: Best-Practices/Distribute-service-to-vm-and-container-with-NLB.md
+    - name: 利用网络负载均衡部署服务端可弹性伸缩的业务
+      href: Best-Practices/AG-as-backend-server.md
   - name: 问题排查
     items:
-    - name: 云主机无法连接MongoDB实例？
-      href: Troubleshooting/Connect-Failed.md
-    - name: 云数据库 MongoDB 不支持哪些命令？
-      href: Troubleshooting/Command.md
-    - name: 账号密码正确，连接提示无权限？
-      href: Troubleshooting/Authentication.md        
+    - name: 网络负载均衡业务接入失败？
+      href: Troubleshooting/Access NLB Service-Failed.md       
   - name: 常见问题
     href: FAQ/FAQ.md
   - name: API参考
@@ -125,9 +104,4 @@
     items:
     - name: 文档历史记录
       href: Related-Resources/Document-History.md   
-    - name: 备案
-      href: Related-Resources/Filing.md           
-      status: 0        
-    - name: 词汇表
-      href: Related-Resources/Glossary.md           
-      status: 0
+

@@ -22,32 +22,32 @@
 	
 	点击 **添加** 创建一个监听器：选择HTTPS协议，配置监听端口、证书、空闲连接超时。
 
-	![ALB后端服务设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-045.png)
+	![ALB后端服务设置](../../../../image/Networking/ALB/ALB-045.png)
 
 - 点击 **新建证书** 可新建一个SSL证书。
 
-	![ALB后端服务设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-046.png)
+	![ALB后端服务设置](../../../../image/Networking/ALB/ALB-046.png)
 
 - 后端转发配置：可以新建或者选择已有的后端服务，注意只能选择后端协议为HTTP类型的后端服务。
 	
 	这里新建一个后端服务：配置后端服务名称、协议（HTTP）、端口为80、调度算法选择加权轮询、开启会话保持、配置会话保持超时时间、开启获取真实IP，配置获取HTTP头字段。
 
-	![ALB后端服务设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-047.png)
+	![ALB后端服务设置](../../../../image/Networking/ALB/ALB-047.png)
 
 - 配置健康检查：设置健康检查相关参数，这里使用HTTP方式。
 
-	![ALB后端服务设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-048.png)
+	![ALB后端服务设置](../../../../image/Networking/ALB/ALB-048.png)
 
 - 添加服务器组：根据业务需要选择虚拟服务器组、高可用组。
 
-	![ALB后端服务设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-049.png)
+	![ALB后端服务设置](../../../../image/Networking/ALB/ALB-049.png)
 
 - 如没有可用的虚拟服务器组，点击 **新建虚拟服务器组** 创建一个新的虚拟服务器组，可选云主机、容器，定义实例的端口、权重
 	
 	注：只能选择与负载均衡同私有网络下的云主机、容器资源。
 
-	![ALB后端服务设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-050.png)
+	![ALB后端服务设置](../../../../image/Networking/ALB/ALB-050.png)
 
 - 至此，已创建完成基于HTTP协议的监听器，可在监听器列表查看。
 
-	![ALB后端服务设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-051.png)
+	![ALB后端服务设置](../../../../image/Networking/ALB/ALB-051.png)

@@ -4,5 +4,5 @@
 
 1. 可修改服务器组名称，添加、删除虚拟服务器组内的云主机、容器资源。
 
-	![修改虚拟服务器组](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-096.png)
+	![修改虚拟服务器组](../../../../image/Networking/ALB/ALB-096.png)
 		

@@ -14,13 +14,13 @@
 		注：同一负载均衡下的监听端口不可重复，监听器创建后，监听协议、端口不允许修改；	
 	- 空闲连接超时：输入范围1~86400秒；
 
- 	![ALB前端监听配置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-022.png)
+		![ALB前端监听配置](../../../../image/Networking/ALB/ALB-022.png)
 
 	**后端转发配置：**
 
 	- 默认后端服务：新建或选择一个已有的后端服务，选择已有后端服务相关参数不可修改；
 	
-	- 后端服务名称：定义后端服务名称，随监听器同步创建的后端服务可在后端服务列表查看；	
+		 后端服务名称：定义后端服务名称，随监听器同步创建的后端服务可在后端服务列表查看；	
 	
 	- 后端协议：默认显示，如监听协议为http、https则后端协议为http，如监听协议为tcp则后端协议为tcp；
 	
@@ -28,9 +28,9 @@
 	
 	- 调度算法：加权轮询、加权最小连接数、源IP，可根据实际业务需求选择；
 	
-	- 会话保持：默认关闭，后端协议为http时支持植入方式的cookie会话保持；	
+		 会话保持：默认关闭，后端协议为http时支持植入方式的cookie会话保持；	
 	
-	- cookie超时时间：输入范围0~86400，默认0代表与浏览器同生命周期；	
+		 cookie超时时间：输入范围0~86400，默认0代表与浏览器同生命周期；	
 	
 	- 获取真实IP：后端协议为http时默认开启，后端协议为tcp时支持通过proxyprotocol协议透传；
 	
@@ -38,7 +38,7 @@
 		
 	- 获取http头字段：可选择X-Forwarded-Proto、 XForwarded-Port、X-Forwarded-LBIP 、X-Forwarded-Host 多项，用于透传客户端http请求的相关信息；
 
- 	![ALB后端转发配置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-023.png)	
+		![ALB后端转发配置](../../../../image/Networking/ALB/ALB-023.png)	
 
 	**健康检查设置：**
 
@@ -58,19 +58,19 @@
 	
 	- 检查路径：仅健康检查方式为HTTP时填写，必须以“/”开头、最多支持5级目录，不得超过100字符。
 
- 	![ALB健康检查设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-024.png)
+		![ALB健康检查设置](../../../../image/Networking/ALB/ALB-024.png)
 
 	**添加服务器组：**
 
 	- 选择服务器组类型：虚拟服务器、高可用组，或者可以暂不添加；
 	
-	- 虚拟服务器组：系统会自动筛选出当前可以绑定的服务器组列表，如没有可用的服务器组，可点击“新建虚拟服务器组”进行创建；	
+		 虚拟服务器组：系统会自动筛选出当前可以绑定的服务器组列表，如没有可用的服务器组，可点击“新建虚拟服务器组”进行创建；	
 	
 		注：可选服务器组中的后端实例必须与负载均衡处于相同地域、私有网络、可用区下。
 
 	- 高可用组：系统会自动筛选出当前可以绑定的高可用组，如没有可用的高可用组，请前往高可用组页面进行创建；注：可选高可用组中的后端实例必须与负载均衡处于相同地域、私有网络、可用区下。
 
- 	![ALB添加服务器组](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-025.png)
+		![ALB添加服务器组](../../../../image/Networking/ALB/ALB-025.png)
 
 
 ## 管理监听器
@@ -83,7 +83,7 @@
 
 4. 删除监听器：通过监听器列表页-操作栏，可删除监听器。
 
-![ALB管理监听器](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-026.png)
+![ALB管理监听器](../../../../image/Networking/ALB/ALB-026.png)
 	
 ## 编辑监听器
 
@@ -95,7 +95,7 @@
 
 4. 其他参数项不支持修改。
 
-![ALB编辑监听器](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-027.png)
+![ALB编辑监听器](../../../../image/Networking/ALB/ALB-027.png)
 	
 
 

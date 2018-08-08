@@ -22,30 +22,30 @@
 	
 	点击 **添加** 创建一个监听器：选择TCP协议，配置监听端口、空闲连接超时。
 
-	![ALB前端监听设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-052.png)
+	![ALB前端监听设置](../../../../image/Networking/ALB/ALB-052.png)
 
 - 后端转发配置：可以新建或者选择已有的后端服务，注意只能选择后端协议为TCP类型的后端服务。
 	
 	这里新建一个后端服务：配置后端服务名称、协议（TCP）、端口为80、调度算法选择加权轮询、开启获取真实IP。
 
-	![ALB后端转发设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-053.png)
+	![ALB后端转发设置](../../../../image/Networking/ALB/ALB-053.png)
 
 - 配置健康检查：设置健康检查相关参数，这里使用TCP方式。
 
-	![ALB健康检查设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-054.png)
+	![ALB健康检查设置](../../../../image/Networking/ALB/ALB-054.png)
 
 - 添加服务器组：根据业务需要选择虚拟服务器组、高可用组。
 
 	根据业务需要选择虚拟服务器组、高可用组。
 
-	![ALB服务器组设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-055.png)
+	![ALB服务器组设置](../../../../image/Networking/ALB/ALB-055.png)
 
 - 如没有可用的虚拟服务器组，点击 **新建虚拟服务器组** 创建一个新的虚拟服务器组，可选云主机、容器，定义实例的端口、权重。
 	
 	注：只能选择与负载均衡同私有网络下的云主机、容器资源。
 
-	![ALB虚拟服务器组设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-056.png)
+	![ALB虚拟服务器组设置](../../../../image/Networking/ALB/ALB-056.png)
 
 - 至此，已创建完成基于TCP协议的监听器，可在监听器列表查看。
 
-	![ALB监听器列表页](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-057.png)
+	![ALB监听器列表页](../../../../image/Networking/ALB/ALB-057.png)

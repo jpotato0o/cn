@@ -22,7 +22,7 @@
 	
 	点击 **添加** 创建一个监听器：选择TCP协议，配置监听端口、空闲连接超时。
 
-	![ALB前端监听设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-052.png)
+	![ALB前端监听设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/NLB/NLB-022.png)
 
 - 后端转发配置：可以新建或者选择已有的后端服务，注意只能选择后端协议为TCP类型的后端服务。
 	
@@ -30,11 +30,11 @@
 
     另外重点注意连接耗尽（connection draining）超时时间设置。当一个服务器从“虚拟服务器组”或者高可用组（AG）中摘除时，只有已建立的TCP连接报文会继续向该服务器转发、直到连接耗尽时间超时为止，新建立的TCP连接将不会向该服务器转发。
 
-	![ALB后端转发设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-053.png)
+	![ALB后端转发设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/NLB/NLB-023.png)
 
 - 配置健康检查：设置健康检查相关参数，这里使用TCP方式。
 
-	![ALB健康检查设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-054.png)
+	![ALB健康检查设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/NLB/NLB-024.png)
 
 - 添加服务器组：根据业务需要选择虚拟服务器组、高可用组。
 
@@ -46,11 +46,11 @@
 	
 	注：只能选择与负载均衡同私有网络下的云主机、容器资源。
 
-	![ALB虚拟服务器组设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-056.png)
+	![ALB虚拟服务器组设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/NLB/NLB-025.png)
 
 - 至此，已创建完成基于TCP协议的监听器，可在监听器列表查看。
 
-	![ALB监听器列表页](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-057.png)
+	![ALB监听器列表页](https://github.com/jdcloudcom/cn/blob/master/image/Networking/NLB/NLB-057.png)
 
 # 修改配置支持连接耗尽的TCP监听器策略
 

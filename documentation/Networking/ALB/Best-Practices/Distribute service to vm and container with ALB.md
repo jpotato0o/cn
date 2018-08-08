@@ -20,35 +20,35 @@
 
 	点击 **添加** 创建一个监听器：选择HTTP协议，配置端口、空闲连接超时，点击下一步。
 
-	![ALB前端监听设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-061.png)
+	![ALB前端监听设置](../../../../image/Networking/ALB/ALB-061.png)
 
 - 后端转发配置：
 	
 	新建一个后端服务，配置后端服务名称、协议（默认）、端口、调度算法、开启会话保持、配置获取HTTP头字段，点击下一步。
 
-	![ALB后端转发设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-062.png)
+	![ALB后端转发设置](../../../../image/Networking/ALB/ALB-062.png)
 
 - 配置健康检查：
 
 	配置健康检查参数，点击下一步
 
-	![ALB健康检查设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-063.png)
+	![ALB健康检查设置](../../../../image/Networking/ALB/ALB-063.png)
 
 - 新建服务器组：
 
 	选择虚拟服务器组类型，点击新建一个服务器组。
 
-	![ALB新建服务器组设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-064.png)
+	![ALB新建服务器组设置](../../../../image/Networking/ALB/ALB-064.png)
 
 - 虚拟服务器组添加主机、容器类型资源。
 	
 	填写虚拟服务器组名称，选择并添加主机、容器类型的资源实例，配置端口、权重。
 
-	![ALB虚拟服务器组添加资源设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-065.png)
+	![ALB虚拟服务器组添加资源设置](../../../../image/Networking/ALB/ALB-065.png)
 
 - 绑定虚拟服务器组。
 
 	选择并绑定这个虚拟服务器组，点击确定。
 
-	![ALB绑定虚拟服务器组](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-066.png)
+	![ALB绑定虚拟服务器组](../../../../image/Networking/ALB/ALB-066.png)
 

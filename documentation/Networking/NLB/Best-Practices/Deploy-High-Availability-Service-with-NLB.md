@@ -17,36 +17,36 @@
 
 1. 通过控制台菜单-负载均衡打开负载均衡资源列表页，点击 **创建** 新建一个负载均衡实例。
 
-	![ALB创建实例设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-067.png)
+	![ALB创建实例设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/NLB/NLB-Create.png)
 
 
 1. 选择相应的地域：华北-北京，可用区：可用区A、可用区B。
 
-	![ALB选择地域设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-068.png)
+	![ALB选择地域设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/NLB/NLB-ChooseRegion.png)
 
 1. 选择私有网络、子网，绑定公网IP并选择计费方式、带宽。
 
-	![ALB网络设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-069.png)
+	![ALB网络设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/NLB/NLB-IP.png)
 
 1. 填写负载均衡名称、描述。
 
-	![ALB基本设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-070.png)
+	![ALB基本设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/NLB/NLB-Name.png)
 
 - 确认配置信息，点击 **立即购买**。
 
-	![ALB购买设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-071.png)
+	![ALB购买设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/NLB/NLB-BuyInfo.png)
 
 - 确认订单信息并完成支付，创建负载均衡实例。
 
-	![ALB支付设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-072.png)
+	![ALB支付设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/NLB/NLB-Confirm.png)
 
 - 刷新负载均衡列表，查看新创建的负载均衡实例。
 
-	![ALB查看设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-073.png)
+	![ALB查看设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/NLB/NLB-List.png)
 
 - 点击列表右侧 **添加监听** 打开监听器页。
 
-	![ALB监听设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-074.png)
+	![ALB监听设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/NLB/NLB-List-Add-Listener.png)
 
 - 创建一个TCP监听器
 
@@ -58,7 +58,7 @@
 
 	2、空闲连接超时：设置空闲连接超时时间；
 
-	![ALB新建监听器设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-075.png)
+	![ALB新建监听器设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/NLB/NLB-022.png)
 
 - 后端转发配置：
 
@@ -76,7 +76,7 @@
 
 	7、连接耗尽：连接耗尽超时时间设置。当一个服务器从“虚拟服务器组”或者高可用组（AG）中摘除时，开始启动连接耗尽计时器，此后只有已建立的TCP连接报文会继续向该服务器转发、直到连接耗尽时间超时为止，而新建立的TCP连接将不会向该服务器转发；
 
-	![ALB后端转发设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-076.png)
+	![ALB后端转发设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/NLB/NLB-023.png)
 
 - 健康检查：
 
@@ -84,13 +84,13 @@
 
 	根据业务需要配置相关参数：
 
-	![ALB健康检查设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-077.png)
+	![ALB健康检查设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/NLB/NLB-024.png)
 
 - 添加服务器组：
 
 	根据业务需要选择虚拟服务器组、高可用组。
 
-	![ALB添加服务器组设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-078.png)
+	![ALB添加服务器组设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/NLB/NLB-025.png)
 
 - 虚拟服务器组添加服务器：
 
@@ -98,7 +98,7 @@
 
 	注：只能选择与负载均衡同可用区和私有网络下的云主机、容器资源。
 
-	![ALB虚拟服务器组添加成员设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-079.png)
+	![ALB虚拟服务器组添加成员设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/NLB/NLB-079.png)
 
 	这样一个跨可用区的负载均衡HTTP监听器配置完成，当单个可用区（如可用区A）发生故障时，负载均衡会将流量转发至可用区B，保证业务正常运行。
 

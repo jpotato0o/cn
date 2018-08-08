@@ -6,7 +6,7 @@
 
 1. 安全组列表页，点击 **添加**，为负载均衡绑定安全组，负载均衡只能与同私有网下的安全组绑定，目前一个负载均衡实例最多可绑定4个安全组。
 
-	![ALB绑定安全组](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-039.png)
+	![ALB绑定安全组](../../../../image/Networking/ALB/ALB-039.png)
 
 ## 移除安全组
 
@@ -14,7 +14,7 @@
 
 1. 安全组列表页-操作栏，点击移除可移除对应的安全组；注意：至少保留一个安全组不可删除。
 
-	![ALB移除安全组](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-040.png)
+	![ALB移除安全组](../../../../image/Networking/ALB/ALB-040.png)
 
 ## 编辑安全组规则
 
@@ -22,4 +22,4 @@
 
 1. 点击安全组名称进入安全组页面编辑安全组规则
 
-	![ALB编辑安全组](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-041.png)
+	![ALB编辑安全组](../../../../image/Networking/ALB/ALB-041.png)

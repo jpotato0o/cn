@@ -2,7 +2,7 @@
 
 1. 通过负载均衡-详情-虚拟服务器组进入虚拟服务器组列表页。
 
-	![虚拟服务器组列表页](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-034.png)
+	![虚拟服务器组列表页](https://github.com/jdcloudcom/cn/blob/master/image/Networking/NLB/NLB-034.png)
 
 1. 点击 **新建虚拟服务器组** 创建一个新的虚拟服务器组；
 
@@ -12,5 +12,5 @@
 
 1. 设置端口和权重：为选中的服务器设置端口和权重，端口输入范围1~65535，权重输入范围1~100，同一虚拟服务器组内同一服务器端口不可重复，权重越高的服务器被转发到请求的概率越大，如端口为空则默认使用后端服务的端口进行转发。	
 
-	![设置端口和权重](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-035.png)
+	![设置端口和权重](https://github.com/jdcloudcom/cn/blob/master/image/Networking/NLB/NLB-035.png)
 

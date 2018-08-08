@@ -2,7 +2,7 @@
 
 1. 通过菜单-网络-负载均衡进入负载均衡列表页。
 
- 	![ALB列表页](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-015.png)
+		![ALB列表页](../../../../image/Networking/ALB/ALB-015.png)
 
 1. 点击“创建”新建一个负载均衡实例。
 
@@ -22,14 +22,14 @@
 
 1. 页面右侧确认配置及费用信息，点击 **立即购买**。
 
-	![ALB创建设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-016.png)
+	![ALB创建设置](../../../../image/Networking/ALB/ALB-016.png)
 
- 	![ALB创建设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-017.png)
+		![ALB创建设置](../../../../image/Networking/ALB/ALB-017.png)
 
 1. 确认订单信息并完成支付，创建负载均衡实例。
 
- 	![ALB确认订单](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-018.png)
+		![ALB确认订单](../../../../image/Networking/ALB/ALB-018.png)
 
 1. 完成负载均衡实例创建；因资源创建需一定时间（通常为几秒），可手动刷新列表页查看状态。
 
- 	![ALB创建完成](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-019.png)
+		![ALB创建完成](../../../../image/Networking/ALB/ALB-019.png)

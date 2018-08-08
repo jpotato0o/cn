@@ -3,7 +3,7 @@
 - 负载均衡提供4、7层的负载监听服务，基于nginx架构实现TCP、HTTP、HTTPS协议下的流量转发。
 - 负载均衡采用集群部署，通过设备冗余提高服务的可用性，消除设备单点故障。
 
-![负载均衡基础架构](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-002.png)
+![负载均衡基础架构](../../../../image/Networking/ALB/ALB-002.png)
 
 ## 组成部分
 
@@ -29,7 +29,7 @@
 
 ## 高复用架构
 
-![高复用架构](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-003.png)
+![高复用架构](../../../../image/Networking/ALB/ALB-003.png)
 
 - 一个负载均衡实例下可以设置多个不同协议类型（HTTP/HTTPS/TCP）的监听器，也可以设置多个协议类型相同、但是不同服务端口号的监听器；
 
@@ -51,7 +51,7 @@
 
 来自外部的访问请求，由负载均衡实例根据相关的策略和转发规则分发到后端服务器进行处理。目前负载均衡支持的分流类型包括： 加权轮询、加权最小连接、源IP。轮询是按序逐个向后端服务实例分发连接请求，加权轮询就是按照实例的权重比例分配轮中次数。最小连接是按照负载均衡与各个后端服务实例之间的最小活跃连接数进行分发请求，加权最小连接就是最终保证负载均衡与后端服务之间的活跃连接数比例与权重比例一致。源IP是指依据请求的源IP地址进行hash，把不同源IP的请求分配到不同后端服务实例。
 
-![分流原理](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-043.png)
+![分流原理](../../../../image/Networking/ALB/ALB-043.png)
 
 ## 会话保持原理
 
@@ -61,7 +61,7 @@
 
 当客户请求再次发生时，客户HTTP request（带有上次负载均衡器插入的cookie）进入负载均衡，然后负载均衡读出cookie里的会话保持数值，将HTTP request（带有与上面同样的cookie）发到指定的服务器，然后后端服务器进行请求回复；由于服务器并不写入cookie，HTTP response将不带cookie，该HTTP response进入负载均衡时，负载均衡将向该HTTP response写入更新老化时间后的cookie，并将HTTP response返回到客户端。
 
-![会话保持](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-044.png)
+![会话保持](../../../../image/Networking/ALB/ALB-044.png)
 
 ## 相关参考
 

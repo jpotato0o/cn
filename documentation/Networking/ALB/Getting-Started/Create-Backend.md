@@ -26,7 +26,7 @@
 
 	- 获取HTTP头字段：支持X-Forwarded-Proto、XForwarded-Por、 X-Forwarded-LBIP 、X-Forwarded-Host多项，用于透传客户端http请求的相关信息；
 
- 	![ALB后端服务设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-028.png)
+		![ALB后端服务设置](../../../../image/Networking/ALB/ALB-028.png)
 
 	**健康检查设置：**
 
@@ -46,7 +46,7 @@
 
 	- 检查路径：仅健康检查方式为HTTP时填写，必须以“/”开头、最多支持5级目录，不得超过100字符。
 
- 	![ALB健康检查设置](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-029.png)	
+		![ALB健康检查设置](../../../../image/Networking/ALB/ALB-029.png)	
 
 	**添加服务器组：**
 
@@ -60,6 +60,6 @@
 
 		注：可选高可用组中的后端实例必须与负载均衡处于相同地域、私有网络、可用区下。
 
- 	![ALB添加服务器组](https://github.com/jdcloudcom/cn/blob/master/image/Networking/ALB/ALB-030.png)
+		![ALB添加服务器组](../../../../image/Networking/ALB/ALB-030.png)
 
 
