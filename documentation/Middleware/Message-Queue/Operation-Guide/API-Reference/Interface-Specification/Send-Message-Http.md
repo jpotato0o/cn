@@ -3,7 +3,7 @@
 - 请求行
 
 ```
-POST {Http接入点}/v1/messages HTTP/1.1
+POST {Http接入点}/v2/messages HTTP/1.1
 ```
 
 - 请求headers参数
